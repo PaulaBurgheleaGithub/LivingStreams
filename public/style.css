@@ -382,10 +382,12 @@ p[data-width="wide"] {
 
 .social-icon {
 	width: var(--size-600);
+	aspect-ratio: 1;
+	fill:var(--clr-neutral-200)
 }
 
-.social-list a:where(:hover, :focus) {
-	fill: var(--clr-neutral-100);
+.social-list a:is(:hover, :focus) .social-icon {
+	fill: var(--clr-accent-300);
 }
 
 @media (max-width:50em) {
