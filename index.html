@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Living Streams — Hope, Healing & Restoration</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary:#F8D463; /* gold */
+    --accent:#578E83;  /* green/teal */
+    --text:#0F0F0F;    /* body text */
+    --dark:#333333;    /* headings */
+	--backgound:#F3F2E7;
+    --max-width:1300px;
+    --footer-height: 88px;
+}
+
+  * { box-sizing: border-box; margin:0; padding:0; }
+
+html, body { height:100%; }
+
+body {
+    font-family: "Inter", sans-serif;
+    background:var(--backgound);
+    color:var(--text);
+    line-height:1.55;
+	position: relative;
+}
+
+  /* Page wrapper — only this controls page height to push footer down */
+.page-wrapper {
+    min-height: calc(100vh - var(--footer-height));
+}
+
+header {
+    max-width:var(--max-width);
+    margin:auto;
+    padding:28px 32px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo {
+    font-family:"Playfair Display", serif;
+    font-size:30px;
+    font-weight:700;
+    color:var(--dark);
+}
+
+  /* HERO STAGE: relative so absolutely positioned yellow square can be placed within it */
+.hero-stage {
+    position: relative;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 80px 32px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 105px;
+    align-items: center;
+}
+
+.hero h1 {
+    font-family:"Playfair Display", serif;
+    font-size:64px;
+    line-height:1.1;
+    color:var(--dark);
+    margin-bottom:20px;
+}
+
+.hero h2 {
+    font-size:22px;
+    color:var(--accent);
+    font-weight:600;
+    margin-bottom:24px;
+}
+
+.hero p {
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.yellow-square {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+	height: 650px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.hero-img {
+    position: relative;
+    z-index: 2; /* sits above the yellow square */
+    width:100%;
+    height:520px; /* fixed height chosen earlier */
+    background:url("https://images.unsplash.com/photo-1505455184862-554165e5f6ba?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3538") center/cover no-repeat;
+    box-shadow:0 10px 45px rgba(0,0,0,0.1);
+}
+
+/* THREE CARD SECTIONS */
+.cards {
+    max-width:var(--max-width);
+    margin:auto;
+    padding:20px 32px 40px; /* reduced bottom padding because footer sits under page-wrapper */
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+}
+
+.card {
+    background:#ffffff;
+    padding:32px;
+    border:1px solid rgba(0,0,0,0.08);
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+.card h3 {
+    font-family:"Playfair Display", serif;
+    font-size:26px;
+    margin-bottom:14px;
+    color:var(--dark);
+}
+
+.card p {
+    font-size:16px;
+    color:var(--text);
+}
+
+.scripture {
+    margin-top:18px;
+    padding:18px;
+    font-style:italic;
+    text-align:center;
+    color:var(--primary);
+    font-weight:600;
+}
+
+  /* FOOTER (fixed height controlled by --footer-height) */
+footer {
+    background: var(--dark);
+    border-top: 1px solid rgba(0,0,0,0.04);
+    height: var(--footer-height);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 18px 32px;
+}
+
+  /* RESPONSIVE adjustments */
+@media(max-width:1000px) {
+    .yellow-square {
+	width: 50%;
+    height: calc(360px - 30px);
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    }
+}
+
+@media(max-width:900px) {
+    .hero { grid-template-columns:1fr; text-align:center; }
+    .hero h1 { font-size:42px; }
+    .hero-img { height:350px; }
+    .yellow-square {
+		display: none;
+    }
+    .cards { grid-template-columns:1fr; }
+  }
+</style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="logo">Living Streams</div>
+    </header>
+	<div class="yellow-square" aria-hidden="true"></div>
+  <!-- HERO STAGE: contains the yellow square absolutely positioned and the hero grid -->
+  <section class="hero-stage">
+      <!-- yellow square sits behind the image -->
+      <div class="hero" role="region" aria-label="Hero">
+        <div>
+          <h1>A Warm Welcome to Living Streams</h1>
+          <h2>Experience Hope, Healing, and Restoration</h2>
+
+          <p>At Living Streams, we believe in the transformative power of God’s love and the healing
+          grace of Jesus Christ. Whether you are seeking prayer, encouragement, or a supportive
+          community, you are not alone.</p>
+        </div>
+
+        <div class="hero-img" role="img" aria-label="Person praying by a stream"></div>
+      </div>
+    </section>
+
+    <!-- THREE BLOCKS LIKE WATERKIND -->
+    <section class="cards">
+      <div class="card">
+        <h3>Welcome</h3>
+        <p>We are here to walk with you on your journey toward spiritual, emotional, and physical
+        healing through Christ-centered prayer and support.</p>
+      </div>
+
+      <div class="card">
+        <h3>Our Mission</h3>
+        <p>To share the message of Christ’s healing, offer compassionate prayer and teaching, and
+        create a space where everyone can encounter God’s presence.</p>
+      </div>
+
+      <div class="card">
+        <h3>Stay Tuned</h3>
+        <p>Our full website is coming soon! Contact us at
+        <strong><a href="tel:07309673663" style="color:var(--accent);text-decoration:none;">07309 673663</a></strong>
+        for prayer requests or more information.</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="scripture">
+      “He heals the brokenhearted and binds up their wounds.” — Psalm 147:3
+    </div>
+  </footer>
+</body>
+</html>
