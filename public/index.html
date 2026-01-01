@@ -22,8 +22,6 @@
       <div class="nav-wrapper">
         <a href="#"><img src="img/LS-logo.svg" alt="living streams logo"></a>
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-          <img class="menu-open" src="./img/menu-open.svg" alt="" aria-hidden="true">
-          <img class="menu-close" src="./img/menu-close.svg" alt="" aria-hidden="true">
           <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation" id="primary-navigation">
@@ -37,6 +35,7 @@
         </nav>
       </div>
     </div>
+    <div class="yellow-nav"></div>
   </header> 
   <main>
     <section class="padding-block-900 | bg-neutral-200" id="home">
@@ -46,8 +45,8 @@
             <h1 class="fs-primary-heading fw-bold">
               Healing and Hope for the Hurting
             </h1>
-            <p class="fs-400">A safe place to talk, pray, worship gently, and find renewed intimacy with God.</p>
-            <button class="button">Request prayer</button>
+            <p>A safe place to talk, pray, worship gently, and find renewed intimacy with God.</p>
+            <a class="button contact-btn" href="#contact">Request prayer</a>
           </div>
           <div class="intro-img">
             <img src="img/intro-img.jpg" alt="person praying">
@@ -56,7 +55,8 @@
       </div>
       <div class="yellow-bg"></div>
     </section>
-    <section class="padding-block-700 carousel">
+    
+    <section class="padding-block-700">
       <div class="container even-columns">
         <div>
           <p>
@@ -101,28 +101,10 @@
         </div>
       </div>
     </section>
-    <section class="padding-block-900 bg-primary-100 text-neutral-100" id="events">
-      <div class="container | flow">
-        <h2 class="fs-secondary-heading semi-bold">Join us for:</h2>
-        <ul class="list-items | flow" style="--flow-spacer: 1em" role="list">
-          <li>
-            <h3 class="fs-400 fw-bold">Virtual Prayers Appointments: Pray without ceasing (1 Thessalonians 5:17)</h3>
-            <p>We offer prayer appointments via Zoom</p>
-          </li>
-          <li>
-            <h3 class="fs-400 fw-bold">In person teaching, ministry and healing times</h3>
-          </li>
-          <li>
-            <h3 class="fs-400 fw-bold">Healing Retreats/Services</h3>
-          </li>
-          <li>
-            <h3 class="fs-400 fw-bold">Virtual or in person personal deep healing times</h3>
-          </li>
-          <li>
-            <h3 class="fs-400 fw-bold">Journey through bereavement</h3>
-            <p>Are you bereaved, single, divorced, journey through grief - we will walk alongside you</p>
-          </li>
-        </ul>
+    <section class="padding-block-900 | yellow-img"> 
+      <div class="container| block | flow ">
+        <p class="fs-secondary-heading semi-bold">Have you any idea how loved you are?</p>
+        <p data-width="wide">I have loved you with an everlasting love; I have drawn you with unfailing kindness  Jeremiah 32.3</p>
       </div>
     </section>
     <section class="padding-block-900" id="for-churches"> 
@@ -147,14 +129,14 @@
                 <p>We provide time for you to enter stillness or to connect with others</p>
               </li>
             </ul>
+              <div>
+                <a href="mailto:contact@livingstreams.co.uk" class="fw-bold text-accent-400" target="_blank" rel="noopener noreferrer">Email us →</a>
+              </div>
             <div class="flow">
               <p>Time to be you... Time to be with Him...</p>
               <div>
                 <p>We will always respect your boundaries and how you are feeling.</p>
                 <p>You never need share anything aloud or in a group unless you choose.</p>
-              </div>
-              <div>
-                <a href="#contact" class="fw-bold text-accent-400">Email us →</a>
               </div>
             </div>
           </div>
@@ -165,10 +147,38 @@
       </div>
       </div>
     </section>
-    <section class="padding-block-900 | yellow-img"> 
-      <div class="container| block | flow ">
-        <p class="fs-secondary-heading semi-bold">Have you any idea how loved you are?</p>
-        <p data-width="wide">I have loved you with an everlasting love; I have drawn you with unfailing kindness  Jeremiah 32.3</p>
+        <section class="padding-block-900 bg-primary-100 text-neutral-100" id="events">
+      <div class="container | flow">
+        <h2 class="fs-secondary-heading semi-bold">Join us for:</h2>
+        <ul class="numbered-items | flow" style="--flow-spacer: 1em" role="list">
+          <li>
+            <div class="flow">
+              <h3 class="numbered-items__title | fs-400 fw-bold">Virtual Prayers Appointments: Pray without ceasing (1 Thessalonians 5:17)</h3>
+              <p class="numbered-items__body" data-width="wide">We offer prayer appointments via Zoom</p>
+            </div>
+          </li>
+          <li>
+            <div class="flow">
+              <h3 class="numbered-items__title | fs-400 fw-bold">In person teaching, ministry and healing times</h3>
+            </div>
+          </li>
+          <li>
+            <div class="flow">
+              <h3 class="numbered-items__title fs-400 fw-bold">Healing Retreats/Services</h3>
+            </div>
+          </li>
+          <li>
+            <div class="flow">
+              <h3 class="numbered-items__title fs-400 fw-bold">Virtual or in person personal deep healing times</h3>
+            </div>
+          </li>
+          <li>
+            <div class="flow">
+              <h3 class="numbered-items__title fs-400 fw-bold">Journey through bereavement</h3>
+              <p class="numbered-items__body" data-width="wide">Are you bereaved, single, divorced, journey through grief - we will walk alongside you</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="padding-block-700" id="for-churches">
@@ -178,7 +188,7 @@
             <p class="fw-bold">Ministry, Teaching and Healing (Eph 4:12)</p>
           </div>
           <div class="block | bg-neutral-200">
-            <p class="fw-bold">LS offer teaching days and healing ministry</p>
+            <p class="fw-bold">We offer teaching days and healing ministry</p>
           </div>
           <div class="block | bg-neutral-200">
             <p class="fw-bold ">Visiting your church (Matthew 11:28)</p>
@@ -209,8 +219,8 @@
               <p>...whatever’s easiest for YOU!</p>
             </div>
             <div>
-              <p class="fw-bold" style="color:Red">Telephone: </p>
-              <p class="fw-bold">Email address: <span class="fw-regular" role="email">contact@livingstreams.co.uk</span></p>
+              <p class="fw-bold">Telephone: +44 7309 673663</p>
+              <p class="fw-bold">Email address: <a href="mailto:contact@livingstreams.co.uk" style="text-decoration: none; color:#30705E" target="_blank" rel="noopener noreferrer">contact@livingstreams.co.uk</a></p>
             </div>
             </div>
             <div class="flow | justify-self-center">
@@ -218,9 +228,9 @@
                 <img src="./img/man-with-open-arms.jpg" alt="a man standing with open arms towards the sunsent">
               </div>
               <div class="flow" style="--flow-spacer: 1em">
-                <p>Therefore, I tell you, whatever you ask in prayer, believe that you have received it, and it will be yours.</p>
+                <p>"Therefore, I tell you, whatever you ask in prayer, believe that you have received it, and it will be yours."</p>
                 <div>
-                  <a href="#" class="fw-bold text-accent-400">Submit Prayer Request →</a>
+                  <a href="mailto:contact@livingstreams.co.uk" class="fw-bold text-accent-400" target="_blank" rel="noopener noreferrer">Submit Prayer Request →</a>
                 </div>
               </div>
             </div>
@@ -231,12 +241,9 @@
       <div class="container block | flow">
         <p class="ff-page-heading fs-page-heading text-accent-400">The Team</p>
         <div>
-          <p class="fs-400 ff-body" data-width="wide">Edith is supported by a prayer ministry team who have all experienced the need for Christ’s healing </p>
-          <p class="fs-400 ff-body" data-width="wide">and long to share with you the healing and comfort they themselves received.</p>
-          <p class="fs-400 ff-body" data-width="wide">All the team have undergone training, but their greatest qualification is that they know from experience what hurting feels like.</p>
-        </div>
-        <div class="video-container">
-          <p style="color:Red">add video here</p>
+          <p data-width="wide">Edith is supported by a prayer ministry team who have all experienced the need for Christ’s healing </p>
+          <p data-width="wide">and long to share with you the healing and comfort they themselves received.</p>
+          <p data-width="wide">All the team have undergone training, but their greatest qualification is that they know from experience what hurting feels like.</p>
         </div>
       </div>
     </section>
@@ -263,17 +270,18 @@
             <h2 class="fs-secondary-heading semi-bold">The Joy of Generosity</h2>
             <div>
               <p>We offer something unique in a blend of friendship, healing prayer and safe space.</p>
-              <p>We’re grateful for every gift. You can give or pay in any of these ways:</p>
+              <p>We’re grateful for every gift. You can give or pay using the following bank details:</p>
             </div>
             <ul>
-              <li style="color:Red">Donate via PayPal</li>
-              <li style="color:Red">Pay for Zoom Event</li>
-              <li>Bank Transfer Details</li>
+              <!-- <li style="color:Red">Donate via PayPal (comming soon)</li>
+              <li style="color:Red">Pay for Zoom Event</li> -->
+              <!-- <li>Bank Transfer Details</li> -->
             </ul>
             <div>
-              <p>Account name: <span class="fw-bold">PCGEL(Living Streams)</span></p>
+              <p>Account name: <span class="fw-bold">PCGEL</span></p>
               <p>Sort code: <span class="fw-bold">40-02-32</span></p>
               <p>Bank account number: <span class="fw-bold">41569015</span></p>
+              <p>Reference: <span class="fw-bold">Living Streams</span></p>
             </div>
           </div>
         </div>
@@ -285,7 +293,7 @@
         <p class="ff-page-heading fs-page-heading text-accent-400">Let’s hear from you</p>
         <p data-width="wide">To share your story and testimonies please leave us your contact details</p>
         <form action="">
-          <button class="button" data-type="inverted">Send now</button>
+          <a class="button" data-type="inverted" href="mailto:contact@livingstreams.co.uk" target="_blank" rel="noopener noreferrer">Send now</a>
         </form>
         </div>
       </div>
@@ -293,27 +301,33 @@
   </main>
   <footer class="bg-primary-400 text-neutral-100 padding-block-900">
     <div class="container">
-      <div class="even-columns">
-        <div>
-          <a href="#"><img src="./img/LS-white-logo.svg" alt="logo image"></a>
+      <div class="primary-footer-wrapper">
+        <div class="primary-footer-logo-social">
+          <a href="#">
+            <img src="./img/LS-white-logo.svg" alt="logo image" aria-label="home">
+          </a>
           <ul class="social-list" role="list" aria-label="Social-media links">
-            <li><a href="#" aria-label="instagram">
-              <svg class="social-icon" width="32" height="32">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M9.391.196C6.787.314 4.53.951 2.706 2.766.877 4.59.248 6.857.13 9.435c-.073 1.608-.501 13.762.74 16.95a8.065 8.065 0 004.657 4.643c1.013.394 2.169.66 3.864.739 14.178.641 19.433.292 21.65-5.382.392-1.01.663-2.165.738-3.857.648-14.213-.105-17.294-2.576-19.762C27.243.81 24.938-.52 9.391.196zm.131 28.712c-1.552-.07-2.394-.328-2.956-.546a5.208 5.208 0 01-3.022-3.012c-.946-2.422-.632-13.925-.548-15.786.083-1.824.452-3.49 1.739-4.776C6.327 3.2 8.384 2.42 22.389 3.053c1.828.083 3.498.452 4.787 1.735 1.592 1.588 2.382 3.66 1.739 17.612-.07 1.549-.33 2.389-.548 2.95-1.44 3.692-4.755 4.204-18.845 3.558zM22.543 7.503a1.91 1.91 0 001.91 1.907 1.91 1.91 0 001.913-1.907 1.91 1.91 0 00-1.912-1.905c-1.056 0-1.91.854-1.91 1.905zM7.78 15.981c0 4.504 3.66 8.155 8.175 8.155 4.516 0 8.176-3.651 8.176-8.155s-3.66-8.153-8.175-8.153c-4.516 0-8.176 3.649-8.176 8.153zm2.87 0a5.3 5.3 0 015.306-5.293 5.3 5.3 0 015.306 5.293 5.301 5.301 0 01-5.306 5.295 5.301 5.301 0 01-5.307-5.295z"
-                  />
-              </svg>
-            </a></li>
-            <li><a href="#" aria-label="facebook">
-              <svg class="social-icon" width="30" height="30">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M25.333 0a4 4 0 014 4v21.333a4 4 0 01-4 4H4a4 4 0 01-4-4V4a4 4 0 014-4h21.333zm0 2.667c.737 0 1.334.597 1.334 1.333v21.333c0 .737-.597 1.334-1.334 1.334h-6.666v-9.334h2.768c.574 0 1.083-.367 1.265-.911l.59-1.773a1 1 0 00-.948-1.316h-3.675v-2.666c0-.667.666-1.334 1.333-1.334h2.667C23.403 9.333 24 8.736 24 8v-.915a.946.946 0 00-.692-.927c-1.747-.46-3.308-.46-3.308-.46-3.333 0-5.333 2.302-5.333 4.302v3.333H12c-.736 0-1.333.597-1.333 1.333V16c0 .736.597 1.333 1.333 1.333h2.667v9.334H4a1.333 1.333 0 01-1.333-1.334V4c0-.736.597-1.333 1.333-1.333h21.333z"
-                  />
-              </svg>
-            </a></li>
+            <li>
+              <a href="#" aria-label="instagram">
+                <svg class="social-icon" width="32" height="32">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.391.196C6.787.314 4.53.951 2.706 2.766.877 4.59.248 6.857.13 9.435c-.073 1.608-.501 13.762.74 16.95a8.065 8.065 0 004.657 4.643c1.013.394 2.169.66 3.864.739 14.178.641 19.433.292 21.65-5.382.392-1.01.663-2.165.738-3.857.648-14.213-.105-17.294-2.576-19.762C27.243.81 24.938-.52 9.391.196zm.131 28.712c-1.552-.07-2.394-.328-2.956-.546a5.208 5.208 0 01-3.022-3.012c-.946-2.422-.632-13.925-.548-15.786.083-1.824.452-3.49 1.739-4.776C6.327 3.2 8.384 2.42 22.389 3.053c1.828.083 3.498.452 4.787 1.735 1.592 1.588 2.382 3.66 1.739 17.612-.07 1.549-.33 2.389-.548 2.95-1.44 3.692-4.755 4.204-18.845 3.558zM22.543 7.503a1.91 1.91 0 001.91 1.907 1.91 1.91 0 001.913-1.907 1.91 1.91 0 00-1.912-1.905c-1.056 0-1.91.854-1.91 1.905zM7.78 15.981c0 4.504 3.66 8.155 8.175 8.155 4.516 0 8.176-3.651 8.176-8.155s-3.66-8.153-8.175-8.153c-4.516 0-8.176 3.649-8.176 8.153zm2.87 0a5.3 5.3 0 015.306-5.293 5.3 5.3 0 015.306 5.293 5.301 5.301 0 01-5.306 5.295 5.301 5.301 0 01-5.307-5.295z"
+                    />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="facebook">
+                <svg class="social-icon" width="30" height="30">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.333 0a4 4 0 014 4v21.333a4 4 0 01-4 4H4a4 4 0 01-4-4V4a4 4 0 014-4h21.333zm0 2.667c.737 0 1.334.597 1.334 1.333v21.333c0 .737-.597 1.334-1.334 1.334h-6.666v-9.334h2.768c.574 0 1.083-.367 1.265-.911l.59-1.773a1 1 0 00-.948-1.316h-3.675v-2.666c0-.667.666-1.334 1.333-1.334h2.667C23.403 9.333 24 8.736 24 8v-.915a.946.946 0 00-.692-.927c-1.747-.46-3.308-.46-3.308-.46-3.333 0-5.333 2.302-5.333 4.302v3.333H12c-.736 0-1.333.597-1.333 1.333V16c0 .736.597 1.333 1.333 1.333h2.667v9.334H4a1.333 1.333 0 01-1.333-1.334V4c0-.736.597-1.333 1.333-1.333h21.333z"
+                    />
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
-        <div>
+        <div class="primary-footer-nav">
           <nav aria-label="Footer" class="footer-nav">
             <ul role="list" >
               <li><a class="" href="#home">Home</a></li>
@@ -323,8 +337,8 @@
             </ul>
           </nav>
         </div>
-        <div>
-          <p>Copyright 2025 - Paula Burghelea. All Rights Reserved</p>
+        <div class="primary-footer-copyright">
+          <p>Copyright 2026 - <a href="https://mycupoflatte.com/" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:#FFD249 ">Paula Burghelea</a>. All Rights Reserved</p>
         </div>
       </div>
     </div>
