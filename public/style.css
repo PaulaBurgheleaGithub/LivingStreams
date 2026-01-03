@@ -247,6 +247,10 @@ main > section {
 	padding-block: var(--size-900);
 }
 
+.mx-auto {
+	margin-inline: auto;
+}
+
 .container {
 	--max-width: 1370px;
 	--padding: 1rem;
@@ -288,16 +292,26 @@ main > section {
 	align-items: center;
 }
 
-@media (min-width: 47em) {
-	.vertical-align-center {
-		align-items: center;
-	}
-}
-
 .flow > *+*{
 	margin: var(--flow-spacer, 3em) 0;
 }
 
+.text-center {
+	text-align: center;
+}
+
+.text-center p {
+	margin-inline: auto;
+}
+
+@media (max-width: 49em) {
+	.text-center-sm-only {
+		text-align: center;
+	}
+	.text-center-sm-only p {
+		margin-inline: auto;
+	}
+}
 
 /* general styling */
 
@@ -430,46 +444,6 @@ p[data-width="wide"] {
 	color: var(--clr-accent-300);
 }
 
-/* footer link animation */
-
-.footer-link {
-	text-shadow: 0 40px 0;
-	text-transform: uppercase;
-	font-weight: 600;
-	text-decoration: none;
-	overflow: hidden;
-	line-height: 1;
-	text-box-trim: both;
-	text-box-edge: cap alphabetic;
-
-	span {
-		position: relative;
-		display: inline-block;
-	}
-	&:not(:hover) {
-		span{
-			animation: down 0.3s forwards;
-			animation-delay: calc(sibling-index() * 0.05s);
-		}
-	}
-	&:hover{
-		span {
-			animation: up 0.5s forwards;
-			animation-delay: calc(sibling-index() * 0.05s);
-		}
-	}
-}
-@keyframes up {
-	100% {
-		translate: 0 -80%;
-	}
-}
-@keyframes down {
-	0% {
-		translate: 0 -80%;
-	}
-}
-
 /* social list */
 .social-list {
 	display: flex;
@@ -526,7 +500,7 @@ p[data-width="wide"] {
 }
 
 
-@media (max-width:50em) {
+@media (max-width:51em) {
 	.primary-footer-wrapper > * {
 		margin-inline: auto;
 	}
@@ -601,8 +575,13 @@ p[data-width="wide"] {
 		background: transparent;
 		border: 0;
 		padding: 0.5em;
-		width: 2em;
+		width: 1.65rem;
+		height: 1.65rem;
+		background-color: #FFD249;
 		background-image: url(./img/menu-open.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 	.mobile-nav-toggle[aria-expanded="true"] {
 		background-image: url(./img/menu-close.svg);
@@ -653,6 +632,9 @@ p[data-width="wide"] {
 	.intro-img {
 		justify-self: center;
 	}
+	.envelope {
+		justify-self: center;
+	}
 }
 
 .for-churches-img {
@@ -665,6 +647,7 @@ p[data-width="wide"] {
 
 .img-with-bck {
 	max-width: 509px;
+	justify-self: center;
 }
 
 .yellow-img {

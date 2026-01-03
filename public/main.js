@@ -10,6 +10,12 @@ navToggle.addEventListener("click", () => {
 	primaryHeader.toggleAttribute("data-overlay");
 });
 
+primaryNav.addEventListener("click", () => {
+	navToggle.setAttribute("aria-expanded", !primaryNav.hasAttribute("data-visible"))
+	primaryNav.toggleAttribute("data-visible");
+	primaryHeader.toggleAttribute("data-overlay");
+})
+
 const scrollWatcher = document.createElement("div");
 
 scrollWatcher.setAttribute("data-scroll-watcher", "");
